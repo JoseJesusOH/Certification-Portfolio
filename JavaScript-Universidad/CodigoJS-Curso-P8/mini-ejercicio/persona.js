@@ -1,19 +1,17 @@
 class Persona {
   static contadorPersona = 0;
-  
 
-  constructor(idPersona,nombre, apellido,edad) {
-    this._idPersona=idPersona;
+  constructor(idPersona, nombre, apellido, edad) {
+    this._idPersona = idPersona;
     this._nombrenombre = nombre;
     this._apellido = apellido;
-    this._edad=edad;
+    this._edad = edad;
   }
-  
 
-  get idPersona() { 
+  get idPersona() {
     return this._idPersona;
   }
-  set idPersona(idPersona) { 
+  set idPersona(idPersona) {
     this._idPersona = idPersona;
   }
   get nombre() {
@@ -34,10 +32,10 @@ class Persona {
   set edad(edad) {
     this._edad = edad;
   }
-  nombreCompleto() {
+  toSring() {
     return `${this._idPersona} 
     ${this._nombrenombre} 
         ${this._apellido}
          ${this._edad}`;
   }
- }
+}
